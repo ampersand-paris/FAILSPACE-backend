@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "Project"
+    "displayName": "Project",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,29 @@
       "type": "string"
     },
     "Header_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "service": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::service.service",
       "inversedBy": "projects"
+    },
+    "projectBody": {
+      "type": "dynamiczone",
+      "components": [
+        "display.full-image",
+        "display.image-with-text",
+        "display.social-media-gallery"
+      ]
     }
   }
 }
