@@ -18,14 +18,14 @@
     "Service_Description": {
       "type": "text"
     },
-    "projects": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::project.project",
-      "mappedBy": "service"
-    },
     "HTML_iD": {
       "type": "string"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "mappedBy": "services"
     }
   }
 }
