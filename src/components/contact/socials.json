@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_contact_socials",
+  "info": {
+    "displayName": "Socials"
+  },
+  "options": {},
+  "attributes": {
+    "Social_Link": {
+      "type": "string"
+    },
+    "Social_Icon_Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
